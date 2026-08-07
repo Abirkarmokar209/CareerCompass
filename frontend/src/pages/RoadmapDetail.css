@@ -1,0 +1,38 @@
+.roadmap-detail { padding: 44px 0 90px; }
+.roadmap-detail-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+.roadmap-detail-head h1 { font-size: 28px; margin: 6px 0 6px; }
+.roadmap-detail-actions { display: flex; align-items: center; gap: 14px; }
+
+.roadmap-body {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px;
+  max-width: 760px;
+}
+.trail-col { padding-top: 10px; }
+.milestones-col { display: flex; flex-direction: column; gap: 14px; }
+
+.add-milestone-form {
+  display: flex;
+  gap: 10px;
+  padding: 14px 16px;
+}
+.add-milestone-form input {
+  flex: 1;
+  border: 1px solid var(--paper-line);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  background: var(--paper);
+}
+
+@media (max-width: 640px) {
+  .roadmap-body { grid-template-columns: 1fr; }
+  .trail-col { display: none; }
+}

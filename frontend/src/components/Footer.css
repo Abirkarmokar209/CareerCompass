@@ -1,0 +1,20 @@
+.site-footer {
+  border-top: 1px solid var(--paper-line);
+  margin-top: 80px;
+  padding: 36px 0;
+  background: var(--paper-dim);
+}
+.site-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer-links a:hover { color: var(--brass); }

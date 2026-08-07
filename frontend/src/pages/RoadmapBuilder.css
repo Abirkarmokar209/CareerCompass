@@ -1,0 +1,23 @@
+.builder { padding: 44px 0 90px; max-width: 760px; }
+.builder-head { margin-bottom: 28px; }
+.builder-head h1 { font-size: 28px; margin: 6px 0 8px; }
+
+.builder-top {
+  padding: 22px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.builder-milestones { display: flex; flex-direction: column; gap: 14px; margin-bottom: 16px; }
+.milestone-form { padding: 20px; }
+.milestone-form-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.milestone-form-row { display: grid; grid-template-columns: 1fr 140px; gap: 14px; }
+
+.builder-actions { margin-top: 24px; }
+
+@media (max-width: 640px) {
+  .builder-top { grid-template-columns: 1fr; }
+  .milestone-form-row { grid-template-columns: 1fr; }
+}

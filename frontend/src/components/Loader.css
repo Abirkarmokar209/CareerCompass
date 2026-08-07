@@ -1,0 +1,30 @@
+.loader-full {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--slate);
+}
+.loader-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--slate);
+  padding: 24px 0;
+}
+.loader-spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2.5px solid var(--paper-line);
+  border-top-color: var(--brass);
+  animation: spin 0.8s linear infinite;
+}
+.loader-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

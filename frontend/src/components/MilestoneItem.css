@@ -1,0 +1,98 @@
+.milestone-item {
+  padding: 0;
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+.milestone-active { border-color: var(--brass-soft); }
+.milestone-done { background: var(--trail-soft); }
+
+.milestone-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  cursor: pointer;
+}
+
+.milestone-num {
+  font-family: var(--font-mono);
+  color: var(--brass);
+  font-weight: 700;
+  font-size: 13px;
+  min-width: 26px;
+}
+
+.milestone-title-wrap { flex: 1; }
+.milestone-title-wrap h4 { font-size: 16.5px; margin: 0 0 2px; }
+
+.milestone-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.milestone-check {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--paper-line);
+  background: #fff;
+  color: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+.milestone-check:hover { border-color: var(--trail); }
+.milestone-check-done {
+  background: var(--trail);
+  border-color: var(--trail);
+  color: #fff;
+}
+
+.milestone-body {
+  padding: 0 20px 20px;
+  border-top: 1px dashed var(--paper-line);
+}
+
+.log-form { padding-top: 16px; }
+.log-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--paper-line);
+  background: var(--paper);
+  font-family: var(--font-body);
+  resize: vertical;
+}
+.log-form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.log-form-row input[type="range"] { flex: 1; min-width: 120px; }
+
+.log-history {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+.log-history li {
+  display: grid;
+  grid-template-columns: 90px 1fr 44px;
+  gap: 10px;
+  align-items: baseline;
+  padding: 8px 10px;
+  background: var(--paper-dim);
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+}
+.log-date { font-family: var(--font-mono); color: var(--slate); font-size: 12px; }
+.log-percent { font-family: var(--font-mono); color: var(--trail); font-weight: 600; text-align: right; }

@@ -1,0 +1,20 @@
+.roadmap-card {
+  display: block;
+  padding: 20px 22px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.roadmap-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-pop);
+  border-color: var(--brass-soft);
+}
+.roadmap-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+.roadmap-card h3 {
+  font-size: 19px;
+  margin: 4px 0 6px;
+}
