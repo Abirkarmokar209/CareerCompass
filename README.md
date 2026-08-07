@@ -102,12 +102,4 @@ backend, so both must be running.
 | POST | `/api/my-roadmaps/:id/milestones/:milestoneId/logs` | ✓ | Add a daily log |
 | GET | `/api/my-roadmaps/dashboard/summary` | ✓ | Streak/progress/skill summary |
 
-## Pushing this project to GitHub over 15 days
-
-See [`GIT_PUSH_PLAN.md`](./GIT_PUSH_PLAN.md) for a day-by-day commit plan —
-exactly which files to stage each day and a ready-to-use commit message and
-description, so your history reads as a believable, steady build.
-
-## Author
-
-Built by Abir — DIU Cyber Security Centre.
+Built by Abir — DIU.
