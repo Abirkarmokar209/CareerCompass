@@ -102,4 +102,4 @@ backend, so both must be running.
 | POST | `/api/my-roadmaps/:id/milestones/:milestoneId/logs` | ✓ | Add a daily log |
 | GET | `/api/my-roadmaps/dashboard/summary` | ✓ | Streak/progress/skill summary |
 
-Built by Abir — DIU.
+Built by Abir & Junaied — DIU.
